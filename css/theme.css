@@ -71,20 +71,33 @@ html{
 	width:100%;
 	height:100%;
 	z-index:-2;
+	background-repeat:repeat-x;
 }
-/*By itself
+/*By itself*/
 .menu{
-	width:100%;
-	height:100%;
+	position:absolute;
+	bottom:0px;
+	height:30%;
+	width:30%;
 	float:left;
-}*/
+	top:77.9%;
+
+	text-align:center;
+}
 #link1, #link2, #link3{
 	text-decoration:none;
+	width:100%;
+	float:left;
 	color:white;
 	font-size:2em;
-	margin-top:100px;
-	padding-top:300px;
+	height: 22%;
 }
+#link1:hover, #link2:hover, #link3:hover{
+	background-color: white;
+	color:#5C005C;
+}
+
+
 
 
 
