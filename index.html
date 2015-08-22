@@ -1,18 +1,12 @@
 <!DOCTYPE html>
 <html>
 <!--html head contains scripts, stylesheet locations, meta info, etc.-->
-<head>
-    <!--JS Files-->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type= "text/javascript" src="src/scripts.js"></script>
-    
-    <!--CSS Files-->
-    <link rel="stylesheet" type = "text/css" href= "css/theme.css">
-    <link href='http://fonts.googleapis.com/css?family=Lato|Open+Sans' rel='stylesheet' type='text/css'>
-    
-    <!--title element defines title in browser toolbar, displays page title in search engines, & favs-->
-    <title>Jenny Henriquez</title>
-    <script>$(window).resize(getWinSize())</script>
+<head> 
+<meta name=viewport content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type = "text/css" href= "css/theme.css">
+<link href='http://fonts.googleapis.com/css?family=Lato|Open+Sans' rel='stylesheet' type='text/css'>
+<!--title element defines title in browser toolbar, displays page title in search engines, & favs-->
+<title>Jenny Henriquez</title>
 </head>
 
 <body id="body">
@@ -21,33 +15,36 @@
 
 	<!--left purple panel-->
 	<div class="leftPanel">
-
 		<img id="purplebg" src="css/purpleBG.fw.png" alt="purple bg">
-
-	 </div>
-
-	 <!--container for the cover NYC skyline & profile picture-->
-	 <div id="mainContainer">
-         
-	 	<!--NYC Background img-->
-	 	<img id="nycBW" src="imgs/nycBW.png" alt="NYC Skyline black/white">
-	 	
-	 	<!--Jenny pic-->
-		<div id="homePicContainer">
-			<img id="picture" src="imgs/homePic.jpg" alt="Jenny">
+		<!--menu-->
+		<div class="menu">
+			<a href="#aboutMe">About Me |</a>
+			<a href="#">My Work |</a>
+			<a href="#">Contact</a><br>
 		</div>
-
 	 </div>
-
-	 <div class ="menu">
-		<a id = "link1" href="#">About Me</a></br>
-		<a id = "link2" href="#">My Work</a></br>
-		<a id = "link3" href="#">Contact</a></br>
-	</div>
-
-	<div class ="contact">
-		<h2>Contact Me</h2>
-	</div>
-     
+	 <!--container for the cover NYC skyline picture-->
+	 <div id="mainContainer">
+	 	<img id="nycBW" src="imgs/nycBW.jpg" alt="NYC Skyline black/white">
+	 			<!--1st div inception, home pic div within left panel div-->
+		<div id="homePicContainer">
+			<img id="picture" src="imgs/Optimized-homePic.jpg" alt="Jenny">
+		</div>
+	 </div>
+    <div class="quote">
+        <p>
+            "The good life is a process, not a state of being. It is a direction, not a destination."<br><p id="quote">- Carl Rogers</p>
+        </p>
+    </div>
+    <div class="content">
+        <span id="aboutMe">
+            <p class="sectionHeader">ABOUT ME</p>
+        </span>
+        <div class="aboutMeText">
+            <p class="text">
+                I am a Greater NYC area resident with over ten years of professional work experience in the field of office and personal administration, education, and health. I have a Master's Degree in Counseling from NYU, a Bachelor's Degree in Psychology from Fairleigh Dickinson University, and an Associate's Degree in Psychology from Hudson County Community College.
+            </p>
+        </div>
+    </div>
 </body>
 </html>

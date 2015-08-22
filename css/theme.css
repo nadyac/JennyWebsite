@@ -1,5 +1,5 @@
 html{
-	height:100%;
+	height:150%;
 	width:100%;
 	margin:0px;
 }
@@ -28,33 +28,27 @@ html{
 	margin-bottom:0px;
 	background-color: transparent;
 }
+/*Picture container*/
 #mainContainer{
 	position:absolute;
 	margin-top:0px;
 	width:100%;
-	height:62.5%;
-    z-index:2;
-    overflow:hidden;
+	height:368px;
 }
 /*child of name*/
 #nycBW{
-	position:absolute;
 	float:right;
-	width:100%;
-	height:105%;
-	padding-left:10%;
+	min-width:100%;
+	height:368px;
 }
-/*child of mainContainer*/
+/*child of leftPanel*/
 #homePicContainer{
 	position:absolute;
-	width:30%;
-	height:100%;
 }
 #picture{
-	width:100%;
-	height:100%;
+    width:368px;
 	margin-top:0px;
-    max-width:none;
+    z-index: 10;
 }
 /*------------------------------
 //leftPanel is new parent elem
@@ -62,46 +56,81 @@ html{
 .leftPanel{
 	position:absolute;
 	float:left;
-	width:30%;
-	height:100%;
+	width:368px;
+	min-height:190%;
 	margin:0px;
+/*	z-index:-2;*/
 }
 /*child elem of leftPanel*/
 #purplebg{
 	position:absolute;
 	width:100%;
 	height:100%;
-	background-repeat:repeat-x;
+    background-repeat:repeat;
 }
-/*By itself*/
+/*About, Work, Contact menu*/
 .menu{
-	position:absolute;
-	bottom:0px;
-	height:30%;
-	width:30%;
-	float:left;
-	top:77.9%;
-
-	text-align:center;
-    
+    position: relative;
+    top: 390px;
+    text-align: center;
 }
-#link1, #link2, #link3{
-	text-decoration:none;
-	width:100%;
-	float:left;
-	color:white;
-	font-size:2em;
-	height: 22%;
+.menu, a{
+    padding-right: 8px;
+    padding-left: 2px;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.3em;
 }
-#link1:hover, #link2:hover, #link3:hover{
-	background-color: white;
-	color:#5C005C;
+.menu, a:hover{
+    color: deeppink;
 }
-
-.contact{
-	top:120%;
+.quote{
+    position:absolute;
+    margin-top:390px;
+    width: 700px;
+    margin-left:400px;
+    margin-right: 50px;
+    float: right;
+    text-align: center;
 }
-
+.quote p{
+    font-family:serif;
+    font-style: italic;
+    font-size:1.3em;
+}
+#quote{
+    float:right;
+    position: relative;
+    font-style: normal;
+    margin-top:0px;
+    margin-right:30px;
+}
+.content{
+    position:relative;
+    opacity: 0.9;
+    width:100%;
+    float: right;
+    top:550px;
+    background-color:#FFFFFF;
+}
+.sectionHeader{
+    font-size: 2em;
+    text-align: center;
+}
+p.sectionHeader{
+    margin-left:45%;
+    color:dimgray;
+    display: inline-block;
+    border: 2px solid;
+    padding:7px;
+}
+.aboutMeText p{
+    color:dimgrey;
+    font-size: 1.4em;
+    margin-left:20px;
+    margin-right:20px;
+    text-align:center;
+}
 
 
 
